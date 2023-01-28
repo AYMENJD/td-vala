@@ -1,7 +1,6 @@
 [
 CCode(
 	cheader_filename = "td/telegram/td_json_client.h",
-	cprefix = "TDJson",
 	lower_case_cprefix = "td_" // Name translation (Eg: td_send -> send, td_receive -> receive)
 )
 ]
@@ -14,7 +13,7 @@ namespace TDJsonApi {
 
 	// TDLib log API
 	[CCode (cheader_filename = "td/telegram/td_log.h", cname = "td_log_message_callback_ptr", has_target = false)]
-	public delegate void log_message_callback_ptr (int verbosity_level, string message);
+	public delegate void log_message_callback_ptr(int verbosity_level, string message);
 	[CCode (cheader_filename = "td/telegram/td_log.h")]
 	void set_log_message_callback(int max_verbosity_level, log_message_callback_ptr callback);
 }
