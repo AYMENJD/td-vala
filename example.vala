@@ -1,4 +1,4 @@
-public static void log_callback(int num, string message){
+public static void log_callback(int log_level, string message){
     print("LOG: "+ message);
 }
 

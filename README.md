@@ -9,7 +9,7 @@ Then you need to link `libtdjson.so` shared library with your vala app/file.
 ### Example
 Here is an example code of using TDJson in vala:
 ```vala
-public static void log_callback(int num, string message){
+public static void log_callback(int log_level, string message){
     print("LOG: "+ message);
 }
 
