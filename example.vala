@@ -17,6 +17,6 @@ void main () {
     //  Set TDLib log verbosity level to 1023 (log everything)
     TDJsonApi.execute("{\"@type\": \"setLogVerbosityLevel\", \"new_verbosity_level\": 1023}");
     
-    TDJsonApi.send(client_id, "{\"@type\": \"getOption\", \"name\": \"version\"");
+    TDJsonApi.send(client_id, "{\"@type\": \"getOption\", \"name\": \"version\"}");
     print(TDJsonApi.receive(10));
 }
